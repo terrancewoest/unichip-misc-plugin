@@ -1,6 +1,4 @@
-jQuery(function() {
-var $ = jQuery;
-
+jQuery(function() { var $ = jQuery;
 
 /**
  * Handles setting up all reactive classes when a user clicks on images
@@ -34,8 +32,6 @@ var FormImgCheckbox = {
         this.inputs = this.images.siblings('input');
         this.inputs.change(function(e) {
             var label = $(e.target).closest('label');
-            console.log(e.target);
-            console.log(label);
             if (e.target.checked) {
                 label.addClass(this.isSelectedClass);
             } else {
